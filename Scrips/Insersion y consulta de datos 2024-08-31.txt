@@ -1,0 +1,6 @@
+insert into empleado(nombre,apellido, genero, nit, documento, telefono, direccion, cargo, createdAt) 
+values('jose', 'perez','masculino',425,'1412412', '121414', 'av-5 kr 8 dpt 2','contador','2024-08-25 00:06:00');
+insert into empleado(nombre,apellido, genero, nit, documento, telefono, direccion, cargo, createdAt) 
+values('maria', 'gomez','femenino',41235,'1312412', '1123414', 'av-7 kr 3 ','recepcionista','2024-08-25 00:06:00');
+
+SELECT * FROM prueba.empleado;

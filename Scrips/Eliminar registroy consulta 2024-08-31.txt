@@ -1,0 +1,7 @@
+SELECT * FROM prueba.empleado;
+
+
+delete from empleado
+where empleado.id=2;
+
+select * from empleado;

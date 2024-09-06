@@ -1,0 +1,5 @@
+update empleado
+set cargo= 'administrador', updateAt='2024-08-28 00:06:00'
+where empleado.id=1;
+
+SELECT empleado.id,empleado.nombre, empleado.apellido, empleado.cargo FROM prueba.empleado;

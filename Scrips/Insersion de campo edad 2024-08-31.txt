@@ -1,0 +1,2 @@
+alter table empleado
+ADD column edad varchar(2) default"2";
