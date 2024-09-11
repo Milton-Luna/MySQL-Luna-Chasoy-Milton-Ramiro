@@ -1,0 +1,20 @@
+use sistema_gestion;
+
+#Consulta de Productos y Proveedores
+SELECT producto.nombre_producto, provedor.nombre_provedor 
+FROM producto
+JOIN provedor_producto ON producto.idproducto = provedor_producto.idproducto
+JOIN provedor ON provedor_producto.idprovedor = provedor.idprovedor;
+
+
+#Consulta de Ordenes de Compra por Usuario
+SELECT usuario.nombre, usuario.apellido, orden_compra.idorden_compra, 
+orden_compra.precio, orden_compra.cantitad
+FROM usuario
+JOIN orden_compra ON usuario.idusuario = orden_compra.idusuario;
+
+#Consulta de Pagos Pendientes
+SELECT orden_compra.idorden_compra, pago_compra.estado_compra, pago_compra.fecha_pago
+FROM pago_compra
+JOIN orden_compra ON pago_compra.idorden_compra = orden_compra.idorden_compra
+WHERE pago_compra.estado_compra = 0;
